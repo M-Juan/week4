@@ -1,0 +1,1597 @@
+.mb-8 {
+  margin-bottom: 8px; }
+
+.mb-24 {
+  margin-bottom: 24px; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.mr-1 {
+  margin-right: -1px; }
+
+.box-1 {
+  width: 24px;
+  height: 24px;
+  background-color: #5F3E2D;
+  border-radius: 4px;
+  margin-right: 8px; }
+
+.box-2 {
+  width: 24px;
+  height: 24px;
+  background-color: #B75929;
+  border-radius: 4px; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.flex-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .tab li {
+    margin-bottom: 80px; }
+    @media (max-width: 767px) {
+      .tab li {
+        margin-bottom: 64px; } }
+  .tab .page {
+    height: 48px;
+    text-decoration: none;
+    display: block;
+    color: #555555;
+    border: 1px solid #555555;
+    font-family: "Roboto", sans-serif;
+    padding: 11px 11px;
+    font-size: 19px; }
+    .tab .page:hover {
+      background-color: #F2F2F2; }
+    @media (max-width: 767px) {
+      .tab .page {
+        font-size: 16px;
+        height: 45px; } }
+  .tab .num {
+    height: 48px;
+    text-decoration: none;
+    display: block;
+    color: #555555;
+    border: 1px solid #555555;
+    font-family: "Roboto", sans-serif;
+    padding: 12px 16px;
+    font-size: 18px;
+    margin-left: -1px; }
+    .tab .num:hover {
+      color: #FFFFFF;
+      background-color: #000000; }
+    @media (max-width: 767px) {
+      .tab .num {
+        height: 45px;
+        font-size: 16px;
+        padding: 12px 15px; } }
+
+.tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #AA0601;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 15px; }
+  @media (max-width: 767px) {
+    .tag {
+      font-size: 16px; } }
+
+.tag-2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #AA0601;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 24px;
+  margin-bottom: 4px; }
+  @media (max-width: 992px) {
+    .tag-2 {
+      margin-right: 16px;
+      font-size: 16px;
+      margin-bottom: 0px; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 auto; }
+
+body {
+  line-height: 1.5; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0px 15px; }
+
+.header {
+  padding: 16px 0px;
+  background-color: #AA0601; }
+  .header h1 {
+    float: left; }
+    .header h1 a {
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      text-decoration: none;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80px;
+      height: 48.57px; }
+  .header .btn a {
+    display: none; }
+    @media (max-width: 767px) {
+      .header .btn a {
+        display: block;
+        color: #FFFFFF; }
+        .header .btn a:hover {
+          color: #000000; }
+        .header .btn a .material-symbols-outlined {
+          font-size: 40px; } }
+  .header ul {
+    width: 492px; }
+    @media (max-width: 767px) {
+      .header ul {
+        display: none; } }
+    .header ul a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-family: "Noto Sans TC", sans-serif; }
+      .header ul a:hover {
+        color: #000000; }
+
+.footer {
+  padding-top: 48px;
+  background-color: #AA0601; }
+  @media (max-width: 767px) {
+    .footer {
+      padding-top: 24px; } }
+  .footer .navbar {
+    width: 464px; }
+    @media (max-width: 767px) {
+      .footer .navbar {
+        display: none; } }
+    .footer .navbar a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-family: "Noto Sans TC", sans-serif; }
+      .footer .navbar a:hover {
+        color: #000000; }
+  .footer .icon-navbar {
+    width: 208px; }
+    @media (max-width: 992px) {
+      .footer .icon-navbar {
+        width: 152px; } }
+    @media (max-width: 767px) {
+      .footer .icon-navbar {
+        width: 84px; } }
+    .footer .icon-navbar img {
+      width: 48px;
+      height: 48px; }
+      @media (max-width: 992px) {
+        .footer .icon-navbar img {
+          width: 40px;
+          height: 40px; } }
+      @media (max-width: 767px) {
+        .footer .icon-navbar img {
+          width: 24px;
+          height: 24px; } }
+  .footer .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer .info .material-symbols-outlined {
+      color: #FFFFFF;
+      font-size: 48px;
+      display: block;
+      margin-right: 16px; }
+      @media (max-width: 767px) {
+        .footer .info .material-symbols-outlined {
+          font-size: 24px;
+          margin-right: 10px; } }
+    .footer .info a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-family: "Noto Sans TC", sans-serif;
+      font-size: 36px;
+      display: block; }
+      .footer .info a:hover {
+        color: #000000; }
+      @media (max-width: 767px) {
+        .footer .info a {
+          font-size: 16px; } }
+  @media (max-width: 767px) {
+    .footer section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+
+.policy {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid #FFFFFF; }
+  @media (max-width: 767px) {
+    .policy {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      margin-top: 24px;
+      max-width: 348px;
+      padding: 16px 1px 24px 2px; } }
+  .policy ul {
+    width: 174px; }
+    .policy ul a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Noto Sans TC", sans-serif; }
+      .policy ul a:hover {
+        color: #000000; }
+    @media (max-width: 767px) {
+      .policy ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start; } }
+
+.banner {
+  height: 787px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .banner {
+      height: 396px;
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png); } }
+  .banner .banner-text {
+    padding-top: 296px;
+    color: #650300;
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: right; }
+    @media (max-width: 767px) {
+      .banner .banner-text {
+        padding-top: 144px; } }
+    .banner .banner-text .text-e {
+      font-size: 36px; }
+      @media (max-width: 767px) {
+        .banner .banner-text .text-e {
+          font-size: 16px; } }
+    .banner .banner-text .text-c {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 4px; }
+      @media (max-width: 767px) {
+        .banner .banner-text .text-c {
+          font-size: 24px;
+          margin-bottom: 8px; } }
+    .banner .banner-text .btn {
+      color: #FFFFFF;
+      font-size: 20px;
+      text-decoration: none;
+      background-color: #AA0601;
+      padding: 6px 12px; }
+      .banner .banner-text .btn:hover {
+        color: #000000; }
+      @media (max-width: 767px) {
+        .banner .banner-text .btn {
+          font-size: 20px; } }
+
+.pro {
+  background-color: #FBF2F2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .pro {
+      padding-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .pro {
+      padding-top: 40px;
+      padding-bottom: 16px;
+      margin-bottom: 40px; } }
+  .pro h2 {
+    font-size: 48px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #650300;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 700; }
+    @media (max-width: 767px) {
+      .pro h2 {
+        font-size: 24px; } }
+  .pro .pro-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 992px) {
+      .pro .pro-card {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .pro .pro-card .card {
+      width: 306px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media (max-width: 992px) {
+        .pro .pro-card .card {
+          width: 336px;
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .pro .pro-card .card {
+          width: 348px; } }
+      .pro .pro-card .card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 24px;
+        display: block; }
+      .pro .pro-card .card h3 {
+        color: #650300;
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-align: center; }
+      .pro .pro-card .card p {
+        font-size: 16px;
+        text-align: justify;
+        font-family: "Noto Sans TC", sans-serif; }
+
+.classic {
+  margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .classic {
+      margin-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .classic {
+      margin-bottom: 16px; } }
+  .classic h2 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #650300;
+    margin-bottom: 48px; }
+    @media (max-width: 767px) {
+      .classic h2 {
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .classic .classic-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 992px) {
+      .classic .classic-card {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    @media (max-width: 992px) {
+      .classic .classic-card .card {
+        width: 100%; } }
+    .classic .classic-card .card img {
+      width: 416px;
+      height: 416px;
+      margin-bottom: 8px; }
+      @media (max-width: 992px) {
+        .classic .classic-card .card img {
+          width: 336px;
+          height: 336px;
+          display: block; } }
+      @media (max-width: 767px) {
+        .classic .classic-card .card img {
+          width: 348px;
+          height: 348px; } }
+    .classic .classic-card .card h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      color: #AA0601;
+      font-style: italic;
+      margin-bottom: 0px; }
+      @media (max-width: 992px) {
+        .classic .classic-card .card h2 {
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .classic .classic-card .card h2 {
+          font-size: 48px; } }
+
+.co-branding {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+  margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .co-branding {
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png);
+      padding-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .co-branding {
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png);
+      padding-bottom: 24px;
+      padding-top: 40px;
+      margin-bottom: 40px; } }
+  .co-branding h2 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 48px; }
+    @media (max-width: 767px) {
+      .co-branding h2 {
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .co-branding .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 992px) {
+      .co-branding .card {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .co-branding .card img {
+      width: 648px;
+      height: 240px; }
+      @media (max-width: 992px) {
+        .co-branding .card img {
+          width: 696px; } }
+      @media (max-width: 767px) {
+        .co-branding .card img {
+          width: 348px; } }
+    .co-branding .card h2 {
+      color: #AA0601;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      background-color: #FFFFFF;
+      padding: 8px 0px;
+      margin-bottom: 0px; }
+      @media (max-width: 992px) {
+        .co-branding .card h2 {
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .co-branding .card h2 {
+          font-size: 48px; } }
+
+.recommend h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #650300;
+  text-align: center;
+  margin-bottom: 48px; }
+  @media (max-width: 767px) {
+    .recommend h2 {
+      margin-bottom: 24px;
+      font-size: 24px; } }
+
+.recommend .recommend-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .recommend .recommend-card {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .recommend .recommend-card {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 24px; } }
+  .recommend .recommend-card .card {
+    width: 306px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    opacity: 1;
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029; }
+    @media (max-width: 992px) {
+      .recommend .recommend-card .card {
+        width: 336px;
+        margin-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .recommend .recommend-card .card {
+        width: 348px;
+        margin-bottom: 16px; } }
+    .recommend .recommend-card .card img {
+      display: block;
+      width: 306px;
+      height: 306px; }
+      @media (max-width: 992px) {
+        .recommend .recommend-card .card img {
+          width: 336px; } }
+      @media (max-width: 767px) {
+        .recommend .recommend-card .card img {
+          width: 348px; } }
+    .recommend .recommend-card .card .card-info {
+      height: 205px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 16px; }
+
+.recommend .info h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+  font-weight: 500;
+  margin-top: 16px; }
+
+.recommend .info p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: justify; }
+
+.recommend .date {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  color: #707070; }
+
+.us {
+  background-color: #FBF2F2;
+  padding: 80px 0px; }
+  @media (max-width: 767px) {
+    .us {
+      padding: 40px 0px; } }
+  .us h2 {
+    color: #650300;
+    font-size: 48px;
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 48px; }
+    @media (max-width: 992px) {
+      .us h2 {
+        margin-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .us h2 {
+        font-size: 24px; } }
+  .us p {
+    width: 50%;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 20px;
+    margin-bottom: 24px; }
+    @media (max-width: 992px) {
+      .us p {
+        width: 83.333%; } }
+    @media (max-width: 767px) {
+      .us p {
+        width: 100%; } }
+  .us .info {
+    width: 50%; }
+    @media (max-width: 992px) {
+      .us .info {
+        width: 83.333%; } }
+    @media (max-width: 767px) {
+      .us .info {
+        width: 100%; } }
+    .us .info .example {
+      border: 1px solid #000000;
+      padding-left: 12px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      margin-bottom: 16px; }
+      .us .info .example span {
+        opacity: 0.2; }
+    .us .info .suggest {
+      padding-bottom: 106px; }
+    .us .info .title {
+      font-family: "Noto Sans TC", sans-serif;
+      margin-bottom: 8px; }
+    .us .info .check {
+      font-family: "Noto Sans TC", sans-serif;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 48px; }
+      @media (max-width: 767px) {
+        .us .info .check {
+          margin-bottom: 24px; } }
+      .us .info .check .material-symbols-outlined {
+        margin-right: 4px; }
+    .us .info .confirm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .us .info .btn {
+      text-decoration: none;
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: 700;
+      color: #FFFFFF;
+      background-color: #AA0601;
+      text-align: center;
+      display: block;
+      width: 66.666%;
+      padding: 16px 0px; }
+      .us .info .btn:hover {
+        color: #000000; }
+      @media (max-width: 992px) {
+        .us .info .btn {
+          width: 60%; } }
+      @media (max-width: 767px) {
+        .us .info .btn {
+          width: 100%; } }
+
+.optical .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #DCDCDC; }
+  .optical .nav a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    width: 432px;
+    text-align: center;
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 8px solid rgba(255, 255, 255, 0); }
+    .optical .nav a:hover {
+      border-bottom: 8px #AA0601 solid;
+      color: #AA0601; }
+    @media (max-width: 992px) {
+      .optical .nav a {
+        width: 256px;
+        font-size: 24px; } }
+    @media (max-width: 767px) {
+      .optical .nav a {
+        width: 125px;
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 8px; } }
+
+.combi {
+  margin-top: 80px; }
+  @media (max-width: 992px) {
+    .combi {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .combi {
+      margin-top: 40px; } }
+  .combi h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px; }
+    @media (max-width: 767px) {
+      .combi h2 {
+        font-size: 24px; } }
+  .combi p {
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .combi p {
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .combi .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .combi .product .card {
+      width: 23%;
+      margin-bottom: 80px; }
+      @media (max-width: 992px) {
+        .combi .product .card {
+          width: 48%;
+          margin-bottom: 40px; } }
+      @media (max-width: 767px) {
+        .combi .product .card {
+          width: 100%;
+          margin-bottom: 24px; } }
+      .combi .product .card .name {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px; }
+      .combi .product .card .price {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #AA0601; }
+      .combi .product .card .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+
+.sunglasses .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #DCDCDC; }
+  .sunglasses .nav a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    width: 432px;
+    text-align: center;
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 8px solid rgba(255, 255, 255, 0); }
+    .sunglasses .nav a:hover {
+      border-bottom: 8px #AA0601 solid;
+      color: #AA0601; }
+    @media (max-width: 992px) {
+      .sunglasses .nav a {
+        width: 256px;
+        font-size: 24px; } }
+    @media (max-width: 767px) {
+      .sunglasses .nav a {
+        width: 125px;
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 8px; } }
+
+.collection {
+  margin-top: 80px; }
+  @media (max-width: 992px) {
+    .collection {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .collection {
+      margin-top: 40px; } }
+  .collection h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px; }
+    @media (max-width: 767px) {
+      .collection h2 {
+        font-size: 24px; } }
+  .collection p {
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .collection p {
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .collection .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .collection .product .card {
+      width: 32%;
+      margin-bottom: 80px; }
+      @media (max-width: 992px) {
+        .collection .product .card {
+          width: 48%;
+          margin-bottom: 40px; } }
+      @media (max-width: 767px) {
+        .collection .product .card {
+          width: 100%;
+          margin-bottom: 24px; } }
+      .collection .product .card .name {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px; }
+      .collection .product .card .price {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #AA0601; }
+      .collection .product .card .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+
+.store {
+  margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    .store {
+      margin-bottom: 40px; } }
+  .store h2 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-top: 96px;
+    margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .store h2 {
+        margin-top: 80px; } }
+    @media (max-width: 767px) {
+      .store h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px; } }
+  .store .menu {
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px; }
+    @media (max-width: 992px) {
+      .store .menu {
+        width: 416px; } }
+    @media (max-width: 767px) {
+      .store .menu {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 24px; } }
+    .store .menu .area {
+      border: 1px solid #CED4DA;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 302px;
+      color: #495057;
+      opacity: 0.75;
+      padding: 6px 12px;
+      font-size: 18px; }
+      .store .menu .area .material-symbols-outlined {
+        font-size: 24px; }
+      @media (max-width: 767px) {
+        .store .menu .area {
+          width: 274px; } }
+  .store .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px; }
+    .store .product .card {
+      font-family: "Noto Sans TC", sans-serif;
+      width: 33.333%;
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-bottom: 48px; }
+      @media (max-width: 992px) {
+        .store .product .card {
+          width: 50%; } }
+      @media (max-width: 767px) {
+        .store .product .card {
+          width: 100%;
+          margin-bottom: 24px; } }
+      .store .product .card p {
+        font-size: 24px;
+        border: 1px solid #00000020;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 24px; }
+      .store .product .card .info {
+        font-size: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+        border: 1px solid #00000020;
+        margin-top: -1px; }
+        .store .product .card .info .location {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          @media (max-width: 992px) {
+            .store .product .card .info .location {
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start; } }
+      .store .product .card .material-symbols-outlined {
+        margin-right: 8px; }
+        @media (max-width: 992px) {
+          .store .product .card .material-symbols-outlined {
+            padding-top: 4px; } }
+    .store .product a {
+      display: block;
+      color: #FFFFFF;
+      background-color: #000000;
+      text-decoration: none;
+      font-size: 18.9px;
+      font-family: "Noto Sans TC", sans-serif;
+      text-align: center;
+      padding: 16px 0px; }
+      .store .product a:hover {
+        color: #000000;
+        background-color: #00000020; }
+
+.taipei {
+  margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .taipei {
+      margin-bottom: 64px; } }
+  .taipei h2 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-top: 96px;
+    margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .taipei h2 {
+        margin-top: 80px; } }
+    @media (max-width: 767px) {
+      .taipei h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px; } }
+  .taipei .menu {
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px; }
+    @media (max-width: 992px) {
+      .taipei .menu {
+        width: 416px; } }
+    @media (max-width: 767px) {
+      .taipei .menu {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 24px; } }
+    .taipei .menu .area {
+      border: 1px solid #CED4DA;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 302px;
+      color: #495057;
+      opacity: 0.75;
+      padding: 6px 12px;
+      font-size: 18px; }
+      .taipei .menu .area .material-symbols-outlined {
+        font-size: 24px; }
+      @media (max-width: 767px) {
+        .taipei .menu .area {
+          width: 274px; } }
+  .taipei .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 992px) {
+      .taipei .product {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .taipei .product .card {
+      font-family: "Noto Sans TC", sans-serif;
+      width: 41.66%; }
+      @media (max-width: 992px) {
+        .taipei .product .card {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .taipei .product .card {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+      @media (max-width: 992px) {
+        .taipei .product .card img {
+          width: 50%;
+          margin: 0px -2px; } }
+      @media (max-width: 767px) {
+        .taipei .product .card img {
+          width: 100%;
+          margin: 0px; } }
+      .taipei .product .card p {
+        font-size: 24px;
+        border: 1px solid #00000020;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 24px; }
+        @media (max-width: 992px) {
+          .taipei .product .card p {
+            width: 335px; } }
+        @media (max-width: 767px) {
+          .taipei .product .card p {
+            width: 345px; } }
+      .taipei .product .card .info {
+        font-size: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border: 1px solid #00000020;
+        margin-top: -1px; }
+        @media (max-width: 992px) {
+          .taipei .product .card .info {
+            width: 335px; } }
+        @media (max-width: 767px) {
+          .taipei .product .card .info {
+            width: 345px; } }
+        .taipei .product .card .info li {
+          margin: 4px 0px; }
+        .taipei .product .card .info .location {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          @media (max-width: 992px) {
+            .taipei .product .card .info .location {
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start; } }
+      .taipei .product .card .material-symbols-outlined {
+        margin-right: 8px; }
+        @media (max-width: 992px) {
+          .taipei .product .card .material-symbols-outlined {
+            padding-top: 4px; } }
+
+.qa {
+  margin-bottom: 48px;
+  font-family: "Noto Sans TC", sans-serif; }
+  @media (max-width: 767px) {
+    .qa {
+      margin-bottom: 40px; } }
+  .qa h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 96px;
+    margin-bottom: 32px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px; }
+    @media (max-width: 767px) {
+      .qa h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px; } }
+  .qa h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px; }
+  .qa h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px; }
+  .qa p {
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .qa p {
+        margin-bottom: 24px; } }
+
+.blog {
+  margin-bottom: 64px; }
+  @media (max-width: 992px) {
+    .blog {
+      margin-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .blog {
+      margin-bottom: 40px; } }
+  .blog nav {
+    background-color: #650300; }
+    @media (max-width: 767px) {
+      .blog nav {
+        display: none; } }
+    .blog nav .navbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .blog nav .subtitle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: -24px;
+      padding: 13px 0px; }
+    .blog nav a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-family: "Noto Sans TC", sans-serif;
+      padding-left: 24px;
+      padding-right: 24px; }
+      .blog nav a:hover {
+        color: #000000; }
+    .blog nav .material-symbols-outlined {
+      color: #FFFFFF;
+      font-size: 40px; }
+  .blog h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 96px;
+    margin-bottom: 32px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px; }
+    @media (max-width: 767px) {
+      .blog h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px; } }
+  .blog .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 60px; }
+    @media (max-width: 992px) {
+      .blog .card {
+        margin-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .blog .card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
+    .blog .card img {
+      width: 48%;
+      margin: 0px 0px; }
+      @media (max-width: 767px) {
+        .blog .card img {
+          width: 100%; } }
+    .blog .card .right {
+      width: 48%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      @media (max-width: 767px) {
+        .blog .card .right {
+          width: 100%;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          margin-top: 8px; } }
+    .blog .card h3 a {
+      text-decoration: none;
+      display: block;
+      color: #650300;
+      font-size: 32px;
+      font-family: "Noto Sans TC", sans-serif; }
+      .blog .card h3 a:hover {
+        color: #FBF2F2; }
+      @media (max-width: 992px) {
+        .blog .card h3 a {
+          font-size: 24px; } }
+    .blog .card .subtitle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      margin-bottom: 16px; }
+      @media (max-width: 992px) {
+        .blog .card .subtitle {
+          font-size: 16px; } }
+      @media (max-width: 767px) {
+        .blog .card .subtitle {
+          margin-bottom: 0px;
+          width: 343px; } }
+      .blog .card .subtitle .date {
+        font-size: 16px; }
+    .blog .card .content {
+      font-size: 20px;
+      font-family: "Noto Sans TC", sans-serif;
+      color: #555555;
+      text-align: justify; }
+      @media (max-width: 992px) {
+        .blog .card .content {
+          font-size: 16px; } }
+      @media (max-width: 767px) {
+        .blog .card .content {
+          display: none; } }
+      .blog .card .content span {
+        display: none; }
+        @media (max-width: 992px) {
+          .blog .card .content span {
+            display: inline; } }
+    .blog .card .more {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      color: #650300;
+      font-size: 36px; }
+      @media (max-width: 992px) {
+        .blog .card .more {
+          display: none; } }
+
+.blogpage nav {
+  background-color: #650300;
+  margin-bottom: 8px; }
+  @media (max-width: 767px) {
+    .blogpage nav {
+      margin-bottom: 16px; } }
+  .blogpage nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .blogpage nav .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -24px;
+    padding: 13px 0px; }
+    @media (max-width: 767px) {
+      .blogpage nav .subtitle {
+        margin: 0px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 343px; } }
+  .blogpage nav a {
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    padding-left: 24px;
+    padding-right: 24px; }
+    .blogpage nav a:hover {
+      color: #000000; }
+    @media (max-width: 767px) {
+      .blogpage nav a {
+        font-size: 16px;
+        padding: 0px; } }
+  .blogpage nav .material-symbols-outlined {
+    color: #FFFFFF;
+    font-size: 40px; }
+    @media (max-width: 767px) {
+      .blogpage nav .material-symbols-outlined {
+        display: none; } }
+
+.blogpage .sub {
+  margin-bottom: 8px; }
+  .blogpage .sub a {
+    font-family: "Noto Sans TC", sans-serif;
+    text-decoration: none;
+    color: #000000; }
+    .blogpage .sub a:hover {
+      color: #AA0601; }
+
+.blogpage .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px; }
+  @media (max-width: 767px) {
+    .blogpage .content {
+      margin-bottom: 48px; } }
+  .blogpage .content .left {
+    width: 65%; }
+    @media (max-width: 992px) {
+      .blogpage .content .left {
+        width: 74%; } }
+    @media (max-width: 767px) {
+      .blogpage .content .left {
+        width: 100%; } }
+    .blogpage .content .left h2 {
+      font-size: 48px;
+      font-family: "Noto Sans TC", sans-serif; }
+      @media (max-width: 767px) {
+        .blogpage .content .left h2 {
+          font-size: 24px; } }
+    .blogpage .content .left p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: 16px; }
+      @media (max-width: 992px) {
+        .blogpage .content .left p {
+          margin-bottom: 24px; } }
+      @media (max-width: 767px) {
+        .blogpage .content .left p {
+          margin-bottom: 16px;
+          font-size: 16px; } }
+    .blogpage .content .left .card p {
+      font-family: "Noto Sans TC", sans-serif;
+      text-align: justify;
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 40px;
+      font-weight: 400; }
+      @media (max-width: 992px) {
+        .blogpage .content .left .card p {
+          margin-top: 16px;
+          margin-bottom: 24px; } }
+      @media (max-width: 992px) {
+        .blogpage .content .left .card p {
+          margin-top: 8px;
+          margin-bottom: 16px; } }
+    .blogpage .content .left .icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 16px; }
+      @media (max-width: 767px) {
+        .blogpage .content .left .icon {
+          display: none; } }
+      .blogpage .content .left .icon a {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        margin-right: 16px;
+        font-size: 16px; }
+        .blogpage .content .left .icon a img {
+          width: 24px;
+          height: 24px; }
+    .blogpage .content .left .arrow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid #707070;
+      margin-bottom: 80px; }
+      @media (max-width: 767px) {
+        .blogpage .content .left .arrow {
+          display: none; } }
+      .blogpage .content .left .arrow a {
+        display: block;
+        font-size: 16px;
+        font-family: "Noto Sans TC", sans-serif;
+        color: #000000;
+        text-decoration: none; }
+        .blogpage .content .left .arrow a:hover {
+          color: #AA0601; }
+      .blogpage .content .left .arrow .material-symbols-outlined {
+        display: block;
+        font-size: 24px;
+        padding-top: 3px; }
+  .blogpage .content .right {
+    width: 33%; }
+    @media (max-width: 992px) {
+      .blogpage .content .right {
+        width: 24%; } }
+    @media (max-width: 767px) {
+      .blogpage .content .right {
+        display: none; } }
+    .blogpage .content .right .sub {
+      color: #AA0601;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 4px; }
+      @media (max-width: 992px) {
+        .blogpage .content .right .sub {
+          margin-bottom: 8px; } }
+      .blogpage .content .right .sub .material-symbols-outlined {
+        font-size: 48px; }
+        @media (max-width: 992px) {
+          .blogpage .content .right .sub .material-symbols-outlined {
+            font-size: 24px; } }
+      .blogpage .content .right .sub h2 {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif; }
+        @media (max-width: 992px) {
+          .blogpage .content .right .sub h2 {
+            font-size: 16px; } }
+
+/*# sourceMappingURL=all.css.map */
