@@ -1,0 +1,198 @@
+
+
+//表頭 
+.header{
+    padding: 16px 0px;
+    background-color:$color-1 ;
+   
+   
+    h1{
+        float: left;
+        a{
+            background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            text-decoration: none;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 80px;
+            height: 48.57px;
+    
+        }
+    }
+    .btn{
+        a{
+            display: none;
+            @include sm() {
+                display: block;
+                color: $color-5;
+                &:hover{
+                    color: $color-4;
+                }
+                .material-symbols-outlined{
+                    font-size: $font-size*5;
+                }
+
+            }
+            
+
+    }
+
+        }
+        
+
+   
+
+    
+
+    ul{
+        width: 492px;
+        // border: 1px solid blue;
+        @include sm () {
+            display: none;
+            
+        }
+        a{
+            text-decoration: none;
+            color: $color-5;
+            font-size: $font-size*2.5;
+            font-family: $font-noto;
+            &:hover{
+                color: $color-4
+            }
+        }
+    }
+    
+}
+
+// 表尾
+.footer{
+    padding-top: 48px;
+    background-color: $color-1;
+    @include sm () {
+        padding-top: 24px;
+    }
+
+    .navbar{
+        width: 464px;
+        @include sm () {
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            color: $color-5;
+            font-size: $font-size*2;
+            font-family: $font-noto;
+            &:hover{
+                color: $color-4;
+            }
+        }
+    }
+
+    .icon-navbar{
+        // border: 1px solid blue;
+        width: 208px;
+        @include pad () {
+            width: 152px;
+        }
+        @include sm () {
+            width: 84px;
+        }
+
+
+        img{
+            width: 48px;
+            height: 48px;
+            @include pad () {
+                width: 40px;
+                height: 40px;
+            }
+            @include sm () {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+   
+
+    .info{
+        display: flex;
+        align-items: center;
+        // border: 1px solid blue;
+        .material-symbols-outlined{
+            color: $color-5;
+            font-size: $font-size*6;
+            display: block;
+            margin-right: 16px;
+            @include sm () {
+                font-size: $font-size*3;
+                margin-right: 10px;
+            }
+           
+        }
+        a{
+            text-decoration: none;
+            color: $color-5;
+            font-family: $font-noto;
+            font-size: $font-size*4.5;
+            display: block;
+            &:hover{
+                color: $color-4;
+            }
+            @include sm () {
+                font-size: $font-size*2;
+            }
+        }
+        
+    }
+    section{
+        @include sm () {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    
+}
+
+.policy{
+    color: $color-5;
+    font-size: $font-size*1.75;
+    font-family: $font-roboto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid #FFFFFF;
+    
+    @include sm () {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 24px;
+        max-width: 348px;
+        padding: 16px 1px 24px 2px;
+    }
+    ul{
+        width: 174px;
+        a{
+            color: $color-5;
+            text-decoration: none;
+            font-size: $font-size*1.75;
+            font-family: $font-noto;
+            &:hover{
+                color: $color-4;
+            }
+        }
+        @include sm () {
+            flex-direction: column;
+            align-items: start;
+        }
+   
+    }
+   
+    
+   
+}
+

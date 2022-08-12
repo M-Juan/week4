@@ -1,0 +1,159 @@
+
+// rwd斷點
+
+@mixin pad{
+    @media (max-width:992px){
+        @content
+    }
+};
+
+@mixin sm {
+    @media(max-width:767px){
+        @content
+    }  
+}
+
+
+// 顏色
+$color-1:#AA0601;
+$color-2:#650300;
+$color-3:#FBF2F2;
+$color-4:#000000;
+$color-5:#FFFFFF;
+
+// 字型
+$font-noto:'Noto Sans TC', sans-serif;
+$font-roboto:'Roboto', sans-serif;
+
+// 字型大小
+$font-size:8px;
+
+// 間距
+
+$mt-1:8px;
+$mb-1:8px;
+
+
+
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mr-1{
+    margin-right: -1px;
+}
+
+
+.box-1{
+    width: 24px;
+    height: 24px;
+    background-color:#5F3E2D ;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.box-2{
+    width: 24px;
+    height: 24px;
+    background-color:#B75929 ;
+    border-radius: 4px;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c{
+    display: flex;
+    align-items: center;
+}
+
+//optical & sunglasses &blog 表尾標籤頁
+.tab{
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+    li{
+        margin-bottom: $mb-1*10;
+        @include sm(){
+            margin-bottom: $mb-1*8;
+        }
+    }
+    .page{
+        height: 48px;
+        text-decoration: none;
+        display: block;
+        color: #555555;
+        border: 1px solid #555555;
+        font-family: $font-roboto;
+        padding: 11px 11px;
+        font-size: $font-size*2.375;
+        &:hover{
+            background-color: #F2F2F2;
+        }
+        @include sm(){
+            font-size: $font-size*2;
+            height: 45px;
+        }
+
+    }
+    .num{
+        height: 48px;
+        text-decoration: none;
+        display: block;
+        color: #555555;
+        border: 1px solid #555555;
+        font-family: $font-roboto;
+        padding: 12px 16px;
+        font-size: $font-size*2.25;
+        margin-left: -1px;
+        &:hover{
+            color: $color-5;
+            background-color: $color-4;
+        }
+        @include sm(){
+            height: 45px;
+            font-size: $font-size*2;
+            padding: 12px 15px;
+        }
+    }
+    
+}
+
+// 標籤
+.tag{
+    font-family: $font-roboto;
+    font-weight: 700;
+    color: $color-1;
+    font-size: $font-size*3;
+    text-decoration: none;
+    margin-right: 15px;
+    @include sm(){
+        font-size: $font-size*2;
+    }
+}
+
+.tag-2{
+    font-family: $font-roboto;
+    font-weight: 700;
+    color: $color-1;
+    font-size: $font-size*3;
+    text-decoration: none;
+    margin-right: 24px;
+    margin-bottom: $mb-1/2;
+    @include pad(){
+        margin-right: 16px;
+        font-size: $font-size*2;
+        margin-bottom: 0px;
+    }
+}
