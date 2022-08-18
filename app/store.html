@@ -9,19 +9,15 @@ current: index
 <section class="store container">
     <h2>門市據點</h2>
     <!-- 下拉選單 -->
-    <ul class="menu">
-        <li >選擇地區</li>
-        <li>
-            <ul class="area">
-                <li>台北市</li>
-                <li>
-                    <span class="material-symbols-outlined">
-                        arrow_drop_down
-                    </span>
-                </li>
-            </ul>
-        </li>
-    </ul>
+    <div class="list">
+        <label for="city-select">選擇地區</label>
+        <select name="city" id="city-select">
+           <option value="台北市">台北市</option>
+           <option value="台中市">台中市</option>
+        </select>
+    </div>
+    
+
 
     <!-- 中間內容 -->
     <ul class="product">
