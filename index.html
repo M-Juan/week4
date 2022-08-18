@@ -52,11 +52,13 @@
   
 
 <div class="banner">
-  <ul class="banner-text container">
-    <li class="text-e">Promise-Desert 2020 早春系列</li>
-    <li class="text-c">看得清，才能看得遠</li>
-    <li><a class="btn" href="#">立即購買</a></li>
-  </ul>
+  <div class="container ">
+    <h2>
+      <span  >Promise-Desert 2020 早春系列</span><br>
+      看得清，才能看得遠
+    </h2>
+    <a href="#">立即購買</a>
+  </div>
 </div>
 
 <!-- 用專業心，做專業事 -->
@@ -144,7 +146,7 @@
           <h3>Jessy</h3>
           <p>眼鏡品質優良，下次還會想來這邊購買！</p>
         </div>
-        <p class="date">2021/06/20</p>
+        <time>2021/06/20</time>
       </div>
       
     </li>
@@ -155,8 +157,7 @@
           <h3>凱倫</h3>
           <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
         </div>
-        <p class="date">2021/04/18</p>
-
+        <time>2021/04/18</time>
       </div>
       
     </li>
@@ -167,7 +168,7 @@
           <h3>悠悠</h3>
           <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
         </div>
-        <p class="date">2020/12/25</p>
+        <time>2020/12/25</time>
 
       </div>
       
@@ -180,8 +181,7 @@
           <h3>Kyuan</h3>
           <p>服務很好，品質沒有任何問題，非常喜歡。</p>
         </div>
-        <p class="date">2020/10/31</p>
-
+        <time>2020/10/31</time>
       </div>
       
     </li>
@@ -189,33 +189,39 @@
 </div>
 
 <!-- 聯絡我們 -->
+
+
+
+
+
+
 <section class="us">
   <h2>聯絡我們</h2>
   <p class="container">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-  <ul class="container info">
-    <li class="title">姓名</li>
-    <li class="example"><span>陳小明</span></li>
-    <li class="title" >聯絡電話</li>
-    <li class="example"><span>0912-345-678</span></li>
-    <li class="title">電子郵件</li>
-    <li class="example"><span>example@email.com</span></li>
-    <li class="title">意見反應</li>
-    <li class="example suggest"><span>請輸入您的意見</span></li>
-    <li class="check">
+  <form class="container">
+    <label for="name">姓名</label>
+    <br>
+    <input type="text" id="name" placeholder="陳小明">
+    <br>
+    <label for="phone">聯絡電話</label>
+    <br>
+    <input type="text" id="phone" placeholder="0912-345-678">
+    <br>
+    <label for="mail">電子郵件</label>
+    <br>
+    <input type="text" id="mail" placeholder="example@email.com">
+    <br>
+    <label for="feedback">意見反應</label>
+    <br>
+    <input type="text" style="height: 136px;" id="feedback" placeholder="請輸入您的意見"> 
+    <br>
+    <label class="check">
       <span class="material-symbols-outlined">
         check_box_outline_blank
       </span>
-      我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</li>
-    <li class="confirm"><a href="#" class="btn">確認送出</a></li>
-    
-  </ul>
-  <span></span>
-  
-  
-   
-
-  
-  
+      我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+    </label>
+  </form>
   
 </section>
 
@@ -246,13 +252,13 @@
             <span class="material-symbols-outlined">
               call
             </span>
-            <a href="#">0800-000-000</a>
+            <a href="tel:0800-000-000">0800-000-000</a>
           </li>
           <li class="info">
             <span class="material-symbols-outlined">
               mail
             </span>
-            <a href="#">glasses@business.com</a>
+            <a href="mail:glasses@business.com">glasses@business.com</a>
           </li>
         </ul>
       </div>

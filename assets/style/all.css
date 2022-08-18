@@ -79,7 +79,8 @@
     font-family: "Roboto", sans-serif;
     padding: 12px 16px;
     font-size: 18px;
-    margin-left: -1px; }
+    margin-left: -1px;
+    margin-right: -1px; }
     .tab .num:hover {
       color: #FFFFFF;
       background-color: #000000; }
@@ -168,7 +169,8 @@ img {
   margin: 0 auto; }
 
 body {
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: 'Roboto','Noto Sans TC'; }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -213,8 +215,7 @@ body {
     .header ul a {
       text-decoration: none;
       color: #FFFFFF;
-      font-size: 20px;
-      font-family: "Noto Sans TC", sans-serif; }
+      font-size: 20px; }
       .header ul a:hover {
         color: #000000; }
 
@@ -232,8 +233,7 @@ body {
     .footer .navbar a {
       text-decoration: none;
       color: #FFFFFF;
-      font-size: 16px;
-      font-family: "Noto Sans TC", sans-serif; }
+      font-size: 16px; }
       .footer .navbar a:hover {
         color: #000000; }
   .footer .icon-navbar {
@@ -274,7 +274,6 @@ body {
     .footer .info a {
       text-decoration: none;
       color: #FFFFFF;
-      font-family: "Noto Sans TC", sans-serif;
       font-size: 36px;
       display: block; }
       .footer .info a:hover {
@@ -301,7 +300,6 @@ body {
 .policy {
   color: #FFFFFF;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   padding-top: 32px;
   padding-bottom: 32px;
   border-top: 1px solid #FFFFFF; }
@@ -322,8 +320,7 @@ body {
     .policy ul a {
       color: #FFFFFF;
       text-decoration: none;
-      font-size: 14px;
-      font-family: "Noto Sans TC", sans-serif; }
+      font-size: 14px; }
       .policy ul a:hover {
         color: #000000; }
     @media (max-width: 767px) {
@@ -341,43 +338,45 @@ body {
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (max-width: 767px) {
     .banner {
       height: 396px;
       background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png); } }
-  .banner .banner-text {
-    padding-top: 296px;
+  .banner h2 {
+    font-size: 64px;
+    font-weight: 700;
     color: #650300;
-    font-family: "Noto Sans TC", sans-serif;
-    text-align: right; }
+    margin-bottom: 4px; }
     @media (max-width: 767px) {
-      .banner .banner-text {
-        padding-top: 144px; } }
-    .banner .banner-text .text-e {
+      .banner h2 {
+        font-size: 24px;
+        margin-bottom: 8px; } }
+    .banner h2 span {
       font-size: 36px; }
       @media (max-width: 767px) {
-        .banner .banner-text .text-e {
+        .banner h2 span {
           font-size: 16px; } }
-    .banner .banner-text .text-c {
-      font-size: 64px;
-      font-weight: 700;
-      margin-bottom: 4px; }
-      @media (max-width: 767px) {
-        .banner .banner-text .text-c {
-          font-size: 24px;
-          margin-bottom: 8px; } }
-    .banner .banner-text .btn {
-      color: #FFFFFF;
-      font-size: 20px;
-      text-decoration: none;
-      background-color: #AA0601;
-      padding: 6px 12px; }
-      .banner .banner-text .btn:hover {
-        color: #000000; }
-      @media (max-width: 767px) {
-        .banner .banner-text .btn {
-          font-size: 20px; } }
+  .banner a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #AA0601;
+    padding: 6px 12px; }
+    .banner a:hover {
+      color: #000000; }
+    @media (max-width: 767px) {
+      .banner a {
+        font-size: 20px; } }
 
 .pro {
   background-color: #FBF2F2;
@@ -414,13 +413,7 @@ body {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
     .pro .pro-card .card {
-      width: 306px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      width: 306px; }
       @media (max-width: 992px) {
         .pro .pro-card .card {
           width: 336px;
@@ -454,7 +447,6 @@ body {
     .classic {
       margin-bottom: 16px; } }
   .classic h2 {
-    font-family: "Noto Sans TC", sans-serif;
     font-weight: 700;
     font-size: 48px;
     text-align: center;
@@ -492,7 +484,6 @@ body {
           width: 348px;
           height: 348px; } }
     .classic .classic-card .card h2 {
-      font-family: "Roboto", sans-serif;
       font-weight: 900;
       color: #AA0601;
       font-style: italic;
@@ -522,7 +513,7 @@ body {
       padding-top: 40px;
       margin-bottom: 40px; } }
   .co-branding h2 {
-    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700;
     font-size: 48px;
     color: #FFFFFF;
     text-align: center;
@@ -547,7 +538,9 @@ body {
                 justify-content: center; } }
     .co-branding .card img {
       width: 648px;
-      height: 240px; }
+      height: 240px;
+      -o-object-fit: cover;
+         object-fit: cover; }
       @media (max-width: 992px) {
         .co-branding .card img {
           width: 696px; } }
@@ -556,7 +549,6 @@ body {
           width: 348px; } }
     .co-branding .card h2 {
       color: #AA0601;
-      font-family: "Roboto", sans-serif;
       font-weight: 900;
       font-style: italic;
       background-color: #FFFFFF;
@@ -570,7 +562,6 @@ body {
           font-size: 48px; } }
 
 .recommend h2 {
-  font-family: "Noto Sans TC", sans-serif;
   font-size: 48px;
   font-weight: 700;
   color: #650300;
@@ -644,7 +635,6 @@ body {
       padding-right: 16px; }
 
 .recommend .info h3 {
-  font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
   color: #000000;
   margin-bottom: 8px;
@@ -652,13 +642,11 @@ body {
   margin-top: 16px; }
 
 .recommend .info p {
-  font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
   color: #000000;
   text-align: justify; }
 
-.recommend .date {
-  font-family: "Noto Sans TC", sans-serif;
+.recommend time {
   font-size: 14px;
   color: #707070; }
 
@@ -671,7 +659,6 @@ body {
   .us h2 {
     color: #650300;
     font-size: 48px;
-    font-family: "Noto Sans TC", sans-serif;
     text-align: center;
     font-weight: 700;
     margin-bottom: 48px; }
@@ -683,7 +670,6 @@ body {
         font-size: 24px; } }
   .us p {
     width: 50%;
-    font-family: "Noto Sans TC", sans-serif;
     font-size: 20px;
     margin-bottom: 24px; }
     @media (max-width: 992px) {
@@ -691,64 +677,37 @@ body {
         width: 83.333%; } }
     @media (max-width: 767px) {
       .us p {
-        width: 100%; } }
-  .us .info {
+        width: 100%;
+        font-size: 16px; } }
+  .us form {
     width: 50%; }
     @media (max-width: 992px) {
-      .us .info {
+      .us form {
         width: 83.333%; } }
     @media (max-width: 767px) {
-      .us .info {
+      .us form {
         width: 100%; } }
-    .us .info .example {
-      border: 1px solid #000000;
-      padding-left: 12px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-      margin-bottom: 16px; }
-      .us .info .example span {
-        opacity: 0.2; }
-    .us .info .suggest {
-      padding-bottom: 106px; }
-    .us .info .title {
-      font-family: "Noto Sans TC", sans-serif;
-      margin-bottom: 8px; }
-    .us .info .check {
-      font-family: "Noto Sans TC", sans-serif;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 48px; }
-      @media (max-width: 767px) {
-        .us .info .check {
-          margin-bottom: 24px; } }
-      .us .info .check .material-symbols-outlined {
-        margin-right: 4px; }
-    .us .info .confirm {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-    .us .info .btn {
-      text-decoration: none;
-      font-family: "Noto Sans TC", sans-serif;
-      font-weight: 700;
-      color: #FFFFFF;
-      background-color: #AA0601;
-      text-align: center;
-      display: block;
-      width: 66.666%;
-      padding: 16px 0px; }
-      .us .info .btn:hover {
-        color: #000000; }
-      @media (max-width: 992px) {
-        .us .info .btn {
-          width: 60%; } }
-      @media (max-width: 767px) {
-        .us .info .btn {
-          width: 100%; } }
+  .us label {
+    font-size: 16px;
+    margin-bottom: 8px; }
+  .us input {
+    margin: 0 auto;
+    background-color: #FBF2F2;
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    padding-left: 12px;
+    margin-bottom: 16px; }
+  .us .check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 48px; }
+    @media (max-width: 767px) {
+      .us .check {
+        margin-bottom: 24px; } }
+    .us .check .material-symbols-outlined {
+      margin-right: 4px; }
 
 .optical .nav {
   display: -webkit-box;
@@ -803,7 +762,6 @@ body {
       .combi h2 {
         font-size: 24px; } }
   .combi p {
-    font-family: "Noto Sans TC", sans-serif;
     text-align: center;
     font-size: 32px;
     margin-bottom: 32px; }
@@ -832,10 +790,8 @@ body {
           width: 100%;
           margin-bottom: 24px; } }
       .combi .product .card .name {
-        font-family: "Roboto", sans-serif;
         font-size: 24px; }
       .combi .product .card .price {
-        font-family: "Roboto", sans-serif;
         font-size: 24px;
         font-weight: 500;
         color: #AA0601; }
@@ -856,7 +812,6 @@ body {
     display: block;
     text-decoration: none;
     color: #000000;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 48px;
     padding-top: 24px;
@@ -889,7 +844,6 @@ body {
     .collection {
       margin-top: 40px; } }
   .collection h2 {
-    font-family: "Roboto", sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 42px; }
@@ -897,7 +851,6 @@ body {
       .collection h2 {
         font-size: 24px; } }
   .collection p {
-    font-family: "Noto Sans TC", sans-serif;
     text-align: center;
     font-size: 32px;
     margin-bottom: 32px; }
@@ -926,10 +879,8 @@ body {
           width: 100%;
           margin-bottom: 24px; } }
       .collection .product .card .name {
-        font-family: "Roboto", sans-serif;
         font-size: 24px; }
       .collection .product .card .price {
-        font-family: "Roboto", sans-serif;
         font-size: 24px;
         font-weight: 500;
         color: #AA0601; }
@@ -944,7 +895,6 @@ body {
     .store {
       margin-bottom: 40px; } }
   .store h2 {
-    font-family: "Noto Sans TC", sans-serif;
     font-weight: 700;
     font-size: 48px;
     border-left: 8px solid #9F1213;
@@ -959,49 +909,38 @@ body {
         font-size: 24px;
         margin-top: 40px;
         margin-bottom: 24px; } }
-  .store .menu {
+  .store .list {
     width: 32%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 40px; }
     @media (max-width: 992px) {
-      .store .menu {
-        width: 416px; } }
+      .store .list {
+        width: 58.3%; } }
     @media (max-width: 767px) {
-      .store .menu {
+      .store .list {
         width: 100%;
-        font-size: 16px;
         margin-bottom: 24px; } }
-    .store .menu .area {
-      border: 1px solid #CED4DA;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      width: 302px;
-      color: #495057;
-      opacity: 0.75;
-      padding: 6px 12px;
-      font-size: 18px; }
-      .store .menu .area .material-symbols-outlined {
-        font-size: 24px; }
-      @media (max-width: 767px) {
-        .store .menu .area {
-          width: 274px; } }
+  .store label {
+    font-size: 24px; }
+    @media (max-width: 767px) {
+      .store label {
+        font-size: 16px; } }
+  .store select {
+    width: 72%;
+    height: 38px;
+    opacity: 0.75;
+    font-size: 18px; }
+    @media (max-width: 767px) {
+      .store select {
+        width: 274px; } }
   .store .product {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1011,7 +950,6 @@ body {
     margin-left: -12px;
     margin-right: -12px; }
     .store .product .card {
-      font-family: "Noto Sans TC", sans-serif;
       width: 33.333%;
       padding-left: 12px;
       padding-right: 12px;
@@ -1059,7 +997,6 @@ body {
       background-color: #000000;
       text-decoration: none;
       font-size: 18.9px;
-      font-family: "Noto Sans TC", sans-serif;
       text-align: center;
       padding: 16px 0px; }
       .store .product a:hover {
@@ -1072,7 +1009,6 @@ body {
     .taipei {
       margin-bottom: 64px; } }
   .taipei h2 {
-    font-family: "Noto Sans TC", sans-serif;
     font-weight: 700;
     font-size: 48px;
     border-left: 8px solid #9F1213;
@@ -1087,49 +1023,38 @@ body {
         font-size: 24px;
         margin-top: 40px;
         margin-bottom: 24px; } }
-  .taipei .menu {
+  .taipei .list {
     width: 32%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 40px; }
     @media (max-width: 992px) {
-      .taipei .menu {
-        width: 416px; } }
+      .taipei .list {
+        width: 58.3%; } }
     @media (max-width: 767px) {
-      .taipei .menu {
+      .taipei .list {
         width: 100%;
-        font-size: 16px;
         margin-bottom: 24px; } }
-    .taipei .menu .area {
-      border: 1px solid #CED4DA;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      width: 302px;
-      color: #495057;
-      opacity: 0.75;
-      padding: 6px 12px;
-      font-size: 18px; }
-      .taipei .menu .area .material-symbols-outlined {
-        font-size: 24px; }
-      @media (max-width: 767px) {
-        .taipei .menu .area {
-          width: 274px; } }
+  .taipei label {
+    font-size: 24px; }
+    @media (max-width: 767px) {
+      .taipei label {
+        font-size: 16px; } }
+  .taipei select {
+    width: 72%;
+    height: 38px;
+    opacity: 0.75;
+    font-size: 18px; }
+    @media (max-width: 767px) {
+      .taipei select {
+        width: 274px; } }
   .taipei .product {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1145,7 +1070,6 @@ body {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
     .taipei .product .card {
-      font-family: "Noto Sans TC", sans-serif;
       width: 41.66%; }
       @media (max-width: 992px) {
         .taipei .product .card {
@@ -1215,8 +1139,7 @@ body {
             padding-top: 4px; } }
 
 .qa {
-  margin-bottom: 48px;
-  font-family: "Noto Sans TC", sans-serif; }
+  margin-bottom: 48px; }
   @media (max-width: 767px) {
     .qa {
       margin-bottom: 40px; } }
@@ -1279,7 +1202,6 @@ body {
       text-decoration: none;
       color: #FFFFFF;
       font-size: 20px;
-      font-family: "Noto Sans TC", sans-serif;
       padding-left: 24px;
       padding-right: 24px; }
       .blog nav a:hover {
@@ -1351,8 +1273,7 @@ body {
       text-decoration: none;
       display: block;
       color: #650300;
-      font-size: 32px;
-      font-family: "Noto Sans TC", sans-serif; }
+      font-size: 32px; }
       .blog .card h3 a:hover {
         color: #FBF2F2; }
       @media (max-width: 992px) {
@@ -1369,7 +1290,6 @@ body {
           -ms-flex-align: center;
               align-items: center;
       font-size: 20px;
-      font-family: "Roboto", sans-serif;
       font-weight: 500;
       margin-bottom: 16px; }
       @media (max-width: 992px) {
@@ -1383,7 +1303,6 @@ body {
         font-size: 16px; }
     .blog .card .content {
       font-size: 20px;
-      font-family: "Noto Sans TC", sans-serif;
       color: #555555;
       text-align: justify; }
       @media (max-width: 992px) {
@@ -1398,10 +1317,12 @@ body {
           .blog .card .content span {
             display: inline; } }
     .blog .card .more {
-      font-family: "Roboto", sans-serif;
       font-weight: 900;
       color: #650300;
-      font-size: 36px; }
+      font-size: 36px;
+      text-decoration: none; }
+      .blog .card .more:hover {
+        color: #000000; }
       @media (max-width: 992px) {
         .blog .card .more {
           display: none; } }
@@ -1440,7 +1361,6 @@ body {
     display: block;
     color: #FFFFFF;
     font-size: 20px;
-    font-family: "Noto Sans TC", sans-serif;
     padding-left: 24px;
     padding-right: 24px; }
     .blogpage nav a:hover {
@@ -1459,7 +1379,6 @@ body {
 .blogpage .sub {
   margin-bottom: 8px; }
   .blogpage .sub a {
-    font-family: "Noto Sans TC", sans-serif;
     text-decoration: none;
     color: #000000; }
     .blogpage .sub a:hover {
@@ -1485,13 +1404,11 @@ body {
       .blogpage .content .left {
         width: 100%; } }
     .blogpage .content .left h2 {
-      font-size: 48px;
-      font-family: "Noto Sans TC", sans-serif; }
+      font-size: 48px; }
       @media (max-width: 767px) {
         .blogpage .content .left h2 {
           font-size: 24px; } }
     .blogpage .content .left p {
-      font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 24px;
       margin-bottom: 16px; }
@@ -1503,7 +1420,6 @@ body {
           margin-bottom: 16px;
           font-size: 16px; } }
     .blogpage .content .left .card p {
-      font-family: "Noto Sans TC", sans-serif;
       text-align: justify;
       font-size: 16px;
       margin-top: 8px;
@@ -1524,7 +1440,8 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      font-weight: 700; }
       @media (max-width: 767px) {
         .blogpage .content .left .icon {
           display: none; } }
@@ -1532,9 +1449,8 @@ body {
         display: block;
         text-decoration: none;
         color: #000000;
-        font-family: "Roboto", sans-serif;
         font-weight: 700;
-        margin-right: 16px;
+        margin-left: 16px;
         font-size: 16px; }
         .blogpage .content .left .icon a img {
           width: 24px;
@@ -1555,7 +1471,6 @@ body {
       .blogpage .content .left .arrow a {
         display: block;
         font-size: 16px;
-        font-family: "Noto Sans TC", sans-serif;
         color: #000000;
         text-decoration: none; }
         .blogpage .content .left .arrow a:hover {
@@ -1588,8 +1503,7 @@ body {
             font-size: 24px; } }
       .blogpage .content .right .sub h2 {
         font-size: 32px;
-        font-weight: 700;
-        font-family: "Roboto", sans-serif; }
+        font-weight: 700; }
         @media (max-width: 992px) {
           .blogpage .content .right .sub h2 {
             font-size: 16px; } }
